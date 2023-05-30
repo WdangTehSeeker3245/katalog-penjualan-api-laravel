@@ -17,8 +17,8 @@ use App\Http\Controllers\PenjualanController;
 |
 */
 Route::resource('product', ProductController::class);
-Route::resource('kategori', ProductController::class);
-Route::resource('penjualan', ProductController::class);
+Route::resource('kategori', KategoriController::class);
+Route::resource('penjualan', PenjualanController::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
